@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>adminUI</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="searchBox">
+        <input
+          type="text"
+          name=""
+          id="myInput"
+          placeholder="search by names...."
+          onkeyup="searchInput();"
+        />
+      </div>
+
+      <table id="adminTable">
+        <thead id="tablehead">
+          <tr>
+            <th><input type="checkbox" id="headcheckbox" onchange="checkAll()"> Select All </th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="pagination">
+         
+         <div>
+          <input type="button" onclick="deleteSelected();" value="delete selected">
+         </div>
+         
+        <ul id="buttonlist">
+          <!-- all the button below -->
+        </ul>
+
+
+      </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
